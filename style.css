@@ -85,11 +85,17 @@ transform:scale(1);
 =========================== */
 
 .hero{
+
     min-height:100vh;
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
-    padding:60px 20px;
+
+    padding:40px 20px;
+
 }
 
 /* ===========================
@@ -101,17 +107,19 @@ transform:scale(1);
     width:90%;
     max-width:800px;
 
-    padding:50px;
-
-    background:rgba(255,255,255,.12);
-
-    backdrop-filter:blur(18px);
-
-    border-radius:30px;
+    margin:auto;
 
     text-align:center;
 
-    box-shadow:0 20px 40px rgba(0,0,0,.4);
+    padding:50px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.1);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
 
 }
 
@@ -151,7 +159,12 @@ text-shadow:
 
 .profile{
 
+    display:block;
+
+    margin:30px auto;
+
     width:280px;
+
     height:280px;
 
     object-fit:cover;
@@ -163,17 +176,8 @@ text-shadow:
     border:8px solid white;
 
     box-shadow:
-    0 0 25px white,
-    0 0 50px hotpink,
-    0 0 90px deeppink;
-
-    transition:.5s;
-
-}
-
-.profile:hover{
-
-    transform:scale(1.05);
+    0 0 20px hotpink,
+    0 0 40px deeppink;
 
 }
 
