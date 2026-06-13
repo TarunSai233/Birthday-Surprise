@@ -20,7 +20,7 @@ window.addEventListener("load", () => {
 // Typewriter Effect
 // -------------------------------
 
-const text = `Dear Sister ❤️
+const text = `Dear Loved One ❤️
 
 Today is your special day.
 
@@ -38,9 +38,9 @@ May all your dreams come true.
 
 🎂 Happy Birthday!
 
-❤️ Love You Forever
+❤️ Love You Forever and Miss You 
 
-— Your Brother Tarunsai`;
+— Your Boo Tarunsai`;
 
 let index = 0;
 
