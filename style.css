@@ -16,16 +16,14 @@ scroll-behavior:smooth;
 }
 
 body{
-
-background:linear-gradient(180deg,#050816,#0b1f4d,#2b1055);
-
-overflow-x:hidden;
-
-color:white;
-
-min-height:100vh;
-
+    overflow-x:hidden;
 }
+
+img{
+    max-width:100%;
+    display:block;
+}
+
 
 /* ===========================
    LOADER
@@ -1138,5 +1136,249 @@ object-position:center;
 section{
 
 overflow:hidden;
+
+}
+
+/* ===============================
+   MOBILE VIEW
+================================= */
+
+@media screen and (max-width:600px){
+
+.hero{
+
+padding:20px;
+
+min-height:auto;
+
+}
+
+.glass{
+
+width:95%;
+
+padding:25px 15px;
+
+}
+
+.hello{
+
+font-size:28px;
+
+}
+
+.name{
+
+font-size:34px;
+
+line-height:45px;
+
+}
+
+.profile{
+
+width:180px;
+
+height:180px;
+
+margin:20px auto;
+
+}
+
+#typing{
+
+font-size:16px;
+
+line-height:28px;
+
+min-height:auto;
+
+}
+
+#giftBtn{
+
+width:100%;
+
+font-size:18px;
+
+padding:14px;
+
+}
+
+.gallery{
+
+grid-template-columns:1fr;
+
+gap:20px;
+
+}
+
+.gallery img{
+
+height:280px;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.card{
+
+padding:25px;
+
+}
+
+.gallerySection h2,
+.qualities h2{
+
+font-size:32px;
+
+}
+
+#message{
+
+font-size:17px;
+
+line-height:30px;
+
+padding:20px;
+
+}
+
+.final h1{
+
+font-size:36px;
+
+}
+
+.final p{
+
+font-size:18px;
+
+}
+
+#musicBtn{
+
+bottom:15px;
+
+right:15px;
+
+font-size:15px;
+
+padding:12px 16px;
+
+}
+
+}
+
+/* ===============================
+   TABLET VIEW
+================================= */
+
+@media screen and (min-width:601px) and (max-width:992px){
+
+.glass{
+
+width:90%;
+
+padding:35px;
+
+}
+
+.name{
+
+font-size:48px;
+
+}
+
+.profile{
+
+width:230px;
+
+height:230px;
+
+}
+
+.gallery{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+#giftBtn{
+
+font-size:20px;
+
+padding:15px 35px;
+
+}
+
+.gallerySection h2,
+.qualities h2{
+
+font-size:40px;
+
+}
+
+}
+
+/* ===============================
+   LAPTOP VIEW
+================================= */
+
+@media screen and (min-width:993px) and (max-width:1200px){
+
+.glass{
+
+max-width:900px;
+
+}
+
+.gallery{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+.cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ===============================
+   DESKTOP
+================================= */
+
+@media screen and (min-width:1201px){
+
+.glass{
+
+max-width:900px;
+
+}
+
+.gallery{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+.cards{
+
+grid-template-columns:repeat(4,1fr);
+
+}
 
 }
