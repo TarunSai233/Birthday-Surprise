@@ -1,0 +1,1138 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+background:linear-gradient(180deg,#050816,#0b1f4d,#2b1055);
+
+overflow-x:hidden;
+
+color:white;
+
+min-height:100vh;
+
+}
+
+/* ===========================
+   LOADER
+=========================== */
+
+#loader{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:#050816;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+z-index:99999;
+
+}
+
+#loader h1{
+
+font-size:50px;
+
+font-family:'Great Vibes',cursive;
+
+animation:pulse 1.2s infinite;
+
+color:white;
+
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.15);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 20px;
+}
+
+/* ===========================
+   GLASS EFFECT
+=========================== */
+
+.glass{
+
+    width:90%;
+    max-width:800px;
+
+    padding:50px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:30px;
+
+    text-align:center;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+
+}
+
+/* ===========================
+   TITLES
+=========================== */
+
+.hello{
+
+font-family:'Great Vibes',cursive;
+
+font-size:45px;
+
+color:#ffd6ff;
+
+}
+
+.name{
+
+font-size:65px;
+
+margin-top:10px;
+
+margin-bottom:25px;
+
+text-shadow:
+
+0 0 20px hotpink,
+
+0 0 40px deeppink;
+
+}
+
+/* ===========================
+   PROFILE IMAGE
+=========================== */
+
+.profile{
+
+    width:280px;
+    height:280px;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    border-radius:50%;
+
+    border:8px solid white;
+
+    box-shadow:
+    0 0 25px white,
+    0 0 50px hotpink,
+    0 0 90px deeppink;
+
+    transition:.5s;
+
+}
+
+.profile:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   TYPING MESSAGE
+=========================== */
+
+#typing{
+
+margin-top:35px;
+
+font-size:22px;
+
+line-height:40px;
+
+min-height:170px;
+
+color:white;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+#giftBtn{
+
+margin-top:35px;
+
+padding:16px 45px;
+
+font-size:22px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+background:linear-gradient(45deg,#ff006e,#ff5ca8);
+
+color:white;
+
+transition:.4s;
+
+box-shadow:0 0 30px hotpink;
+
+}
+
+#giftBtn:hover{
+
+transform:scale(1.08);
+
+box-shadow:
+
+0 0 45px deeppink,
+
+0 0 80px hotpink;
+
+}
+
+/* ===========================
+   STARS
+=========================== */
+
+.stars{
+
+position:fixed;
+
+width:100%;
+
+height:100%;
+
+top:0;
+left:0;
+
+background:url("https://www.transparenttextures.com/patterns/stardust.png");
+
+animation:starsMove 160s linear infinite;
+
+opacity:.45;
+
+z-index:-4;
+
+}
+
+@keyframes starsMove{
+
+0%{
+
+background-position:0 0;
+
+}
+
+100%{
+
+background-position:0 4000px;
+
+}
+
+}
+
+/* ===========================
+   HEARTS
+=========================== */
+
+.hearts{
+
+position:fixed;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+overflow:hidden;
+
+z-index:-2;
+
+}
+
+.hearts::before{
+
+content:"❤️ ❤️ 💕 💖 💗 💝 💘 💞";
+
+position:absolute;
+
+font-size:28px;
+
+left:-20%;
+
+animation:heartMove 20s linear infinite;
+
+opacity:.30;
+
+}
+
+@keyframes heartMove{
+
+0%{
+
+transform:translateY(100vh);
+
+}
+
+100%{
+
+transform:translateY(-120vh);
+
+}
+
+}
+
+/* ===========================
+   FLOATING BALLOONS
+=========================== */
+
+.balloons{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:-1;
+    overflow:hidden;
+}
+
+.balloon{
+    position:absolute;
+    width:70px;
+    height:90px;
+    border-radius:50%;
+    opacity:.85;
+    animation:balloonFloat 18s linear infinite;
+}
+
+.balloon::before{
+    content:"";
+    position:absolute;
+    width:2px;
+    height:90px;
+    background:white;
+    top:90px;
+    left:50%;
+}
+
+.b1{
+    left:8%;
+    background:#ff4d6d;
+    animation-delay:0s;
+}
+
+.b2{
+    left:28%;
+    background:#4cc9f0;
+    animation-delay:4s;
+}
+
+.b3{
+    left:48%;
+    background:#ffd60a;
+    animation-delay:8s;
+}
+
+.b4{
+    left:68%;
+    background:#80ed99;
+    animation-delay:2s;
+}
+
+.b5{
+    left:88%;
+    background:#c77dff;
+    animation-delay:6s;
+}
+
+@keyframes balloonFloat{
+
+0%{
+transform:translateY(120vh);
+}
+
+100%{
+transform:translateY(-200px);
+}
+
+}
+
+/* ===========================
+   GALLERY
+=========================== */
+
+.gallerySection{
+
+padding:120px 8%;
+
+text-align:center;
+
+}
+
+.gallerySection h2{
+
+font-size:48px;
+
+margin-bottom:45px;
+
+text-shadow:0 0 15px hotpink;
+
+}
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+margin-top:40px;
+
+}
+
+.gallery img{
+
+width:100%;
+
+aspect-ratio:1/1;
+
+object-fit:cover;
+
+object-position:center;
+
+border-radius:20px;
+
+cursor:pointer;
+
+transition:.5s;
+
+box-shadow:0 15px 30px rgba(0,0,0,.4);
+
+}
+
+.gallery img:hover{
+
+transform:scale(1.05);
+
+box-shadow:
+
+0 0 25px hotpink,
+
+0 0 50px deeppink;
+
+}
+
+/* ===========================
+   QUALITIES
+=========================== */
+
+.qualities{
+
+padding:120px 8%;
+
+text-align:center;
+
+}
+
+.qualities h2{
+
+font-size:48px;
+
+margin-bottom:50px;
+
+text-shadow:0 0 18px violet;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:35px;
+
+margin-top:40px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+padding:35px;
+
+border-radius:25px;
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.1);
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:
+
+0 0 25px hotpink,
+
+0 0 50px rgba(255,105,180,.5);
+
+}
+
+.card h3{
+
+margin:20px 0;
+
+font-size:28px;
+
+}
+
+.card p{
+
+font-size:18px;
+
+line-height:30px;
+
+}
+
+/* ===========================
+   GIFT SECTION
+=========================== */
+
+#giftBox{
+
+padding:120px 20px;
+
+text-align:center;
+
+}
+
+.gift{
+
+position:relative;
+
+width:190px;
+
+height:180px;
+
+margin:auto;
+
+cursor:pointer;
+
+animation:floating 4s infinite;
+
+}
+
+.box{
+
+position:absolute;
+
+bottom:0;
+
+width:190px;
+
+height:140px;
+
+background:#ff4d88;
+
+border-radius:8px;
+
+box-shadow:0 0 25px hotpink;
+
+}
+
+.lid{
+
+position:absolute;
+
+top:0;
+
+left:-10px;
+
+width:210px;
+
+height:42px;
+
+background:#ff8ab8;
+
+border-radius:8px;
+
+transition:.6s;
+
+box-shadow:0 0 18px pink;
+
+}
+
+.gift:hover .lid{
+
+transform:translateY(-45px) rotate(-8deg);
+
+}
+
+#message{
+
+display:none;
+
+margin-top:60px;
+
+max-width:850px;
+
+margin-left:auto;
+
+margin-right:auto;
+
+padding:35px;
+
+background:white;
+
+color:#333;
+
+border-radius:25px;
+
+font-size:20px;
+
+line-height:36px;
+
+box-shadow:0 0 35px rgba(0,0,0,.35);
+
+animation:fadeUp 1s;
+
+}
+
+#message h1{
+
+color:#ff006e;
+
+margin-bottom:20px;
+
+}
+
+/* ===========================
+   FADE UP ANIMATION
+=========================== */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(70px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.gallery img,
+.card,
+.gift,
+#message{
+
+animation:fadeUp .8s ease;
+
+}
+
+/* =========================================
+   PART 3 - FINAL CSS
+=========================================*/
+
+/* Final Section */
+
+.final{
+
+padding:120px 20px;
+
+text-align:center;
+
+background:linear-gradient(180deg,#2b1055,#1b1464,#050816);
+
+}
+
+.final h1{
+
+font-size:60px;
+
+font-family:'Great Vibes',cursive;
+
+color:white;
+
+text-shadow:
+
+0 0 20px hotpink,
+
+0 0 45px deeppink;
+
+animation:glow 2s infinite alternate;
+
+}
+
+.final p{
+
+margin-top:20px;
+
+font-size:22px;
+
+color:#eee;
+
+line-height:38px;
+
+}
+
+/* Glow Animation */
+
+@keyframes glow{
+
+from{
+
+text-shadow:
+
+0 0 10px hotpink,
+
+0 0 20px deeppink;
+
+}
+
+to{
+
+text-shadow:
+
+0 0 30px hotpink,
+
+0 0 70px deeppink,
+
+0 0 100px violet;
+
+}
+
+}
+
+/* Music Button */
+
+#musicBtn{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+padding:15px 22px;
+
+border:none;
+
+border-radius:40px;
+
+background:#ff006e;
+
+color:white;
+
+font-size:18px;
+
+cursor:pointer;
+
+box-shadow:
+
+0 0 20px hotpink,
+
+0 0 40px deeppink;
+
+transition:.3s;
+
+z-index:999;
+
+}
+
+#musicBtn:hover{
+
+transform:scale(1.1);
+
+}
+
+/* Canvas */
+
+#confetti{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+z-index:998;
+
+}
+
+/* Beautiful Scrollbar */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:linear-gradient(hotpink,deeppink);
+
+border-radius:20px;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.glass{
+
+padding:30px;
+
+}
+
+.hello{
+
+font-size:30px;
+
+}
+
+.name{
+
+font-size:40px;
+
+}
+
+.profile{
+
+width:180px;
+
+height:180px;
+
+}
+
+#typing{
+
+font-size:18px;
+
+line-height:30px;
+
+min-height:140px;
+
+}
+
+#giftBtn{
+
+font-size:18px;
+
+padding:14px 30px;
+
+}
+
+.gallery{
+
+grid-template-columns:1fr;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.gallerySection h2,
+.qualities h2{
+
+font-size:34px;
+
+}
+
+#message{
+
+font-size:18px;
+
+padding:25px;
+
+line-height:30px;
+
+}
+
+.final h1{
+
+font-size:36px;
+
+}
+
+.final p{
+
+font-size:18px;
+
+}
+
+#musicBtn{
+
+bottom:15px;
+
+right:15px;
+
+font-size:15px;
+
+padding:12px 18px;
+
+}
+
+}
+
+/* Floating Animation */
+
+.gallery img{
+
+animation:floatingImage 5s ease-in-out infinite;
+
+}
+
+@keyframes floatingImage{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Card Shine */
+
+.card{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.card::before{
+
+content:"";
+
+position:absolute;
+
+top:-100%;
+
+left:-100%;
+
+width:200%;
+
+height:200%;
+
+background:linear-gradient(
+
+120deg,
+
+transparent,
+
+rgba(255,255,255,.3),
+
+transparent
+
+);
+
+transform:rotate(25deg);
+
+transition:1s;
+
+}
+
+.card:hover::before{
+
+top:100%;
+
+left:100%;
+
+}
+
+/* Gift Glow */
+
+.gift{
+
+filter:drop-shadow(0 0 25px hotpink);
+
+}
+
+/* Image Border Glow */
+
+.gallery img{
+
+border:3px solid rgba(255,255,255,.15);
+
+}
+
+/* Footer */
+
+footer{
+
+padding:40px;
+
+text-align:center;
+
+background:#04050f;
+
+color:#ddd;
+
+font-size:18px;
+
+}
+
+footer span{
+
+color:hotpink;
+
+font-weight:bold;
+
+}
+
+/* Smooth Fade */
+
+.hero,
+.gallerySection,
+.qualities,
+#giftBox,
+.final{
+
+animation:sectionFade 1.2s ease;
+
+}
+
+@keyframes sectionFade{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Image Fix */
+
+img{
+
+display:block;
+
+max-width:100%;
+
+}
+
+.gallery img{
+
+aspect-ratio:1/1;
+
+object-fit:cover;
+
+object-position:center;
+
+}
+
+.profile{
+
+object-fit:cover;
+
+object-position:center;
+
+}
+
+section{
+
+overflow:hidden;
+
+}
